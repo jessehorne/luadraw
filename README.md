@@ -3,6 +3,8 @@ Lua Draw
 
 Lua Draw was inspired by Logo. I wanted to create a graphical application that took in input from a file, and created a visual representation from it. 
 
+![square.ldraw example](example.png)
+
 Requirements
 ------------
 [LÖVE](http://love2d.org/)
