@@ -2,6 +2,9 @@ currx = love.graphics.getWidth()/2
 curry = love.graphics.getHeight()/2
 currr = -90
 
+if arg[2] then
+	love.graphics.setCaption(arg[2])
+end
 
 function string:split(sep)
   local sep, fields = sep or " ", {}
@@ -69,5 +72,4 @@ end
 
 function love.draw()
 	draw_table(t)
-	love.graphics.print(currr, 10, 10)
 end
