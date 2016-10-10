@@ -3,7 +3,7 @@ curry = love.graphics.getHeight()/2
 currr = -90
 
 if arg[2] then
-	love.graphics.setCaption(arg[2])
+	love.window.setTitle(arg[2])
 end
 
 function string:split(sep)
@@ -59,6 +59,7 @@ function love.load()
 		t = create_draw_table(t)
 	else
 		print("No file input.")
+		love.event.quit()
 	end
 end
 
